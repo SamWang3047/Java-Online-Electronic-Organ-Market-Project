@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+    <welcome-file-list>
+        <welcome-file>temp.jsp</welcome-file>
+    </welcome-file-list>
+
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>jspservlet.servlet.UserServlet.LoginServlet</servlet-class>
+  </servlet>
+
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>jspservlet.servlet.UserServlet.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>updateServlet</servlet-name>
+        <servlet-class>jspservlet.servlet.UserServlet.UpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>deleteServlet</servlet-name>
+        <servlet-class>jspservlet.servlet.UserServlet.DeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PurchaseServlet</servlet-name>
+        <servlet-class>jspservlet.servlet.PurchaseServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>jspservlet.servlet.OrderServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddItemServlet</servlet-name>
+        <servlet-class>jspservlet.servlet.CartServlet.AddItemServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ChangeNumServlet</servlet-name>
+        <servlet-class>jspservlet.servlet.CartServlet.ChangeNumServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>GetAllItemServlet</servlet-name>
+        <servlet-class>jspservlet.servlet.CartServlet.GetAllItemServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductSearchServlet</servlet-name>
+        <servlet-class>jspservlet.servlet.ProductSearchServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Order_DeleteServlet</servlet-name>
+        <servlet-class>jspservlet.servlet.Order_DeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CheckOutServlet</servlet-name>
+        <servlet-class>jspservlet.servlet.CartServlet.CheckOutServlet</servlet-class>
+    </servlet>
+
+
+
+    <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>updateServlet</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>deleteServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PurchaseServlet</servlet-name>
+        <url-pattern>/purchase</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddItemServlet</servlet-name>
+        <url-pattern>/AddItem</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ChangeNumServlet</servlet-name>
+        <url-pattern>/ChangeNum</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>GetAllItemServlet</servlet-name>
+        <url-pattern>/GetAllItem</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductSearchServlet</servlet-name>
+        <url-pattern>/proSearch</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Order_DeleteServlet</servlet-name>
+        <url-pattern>/Order_Delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CheckOutServlet</servlet-name>
+        <url-pattern>/CheckOut</url-pattern>
+    </servlet-mapping>
+
+</web-app>
